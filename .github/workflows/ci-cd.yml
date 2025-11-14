@@ -53,7 +53,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Build and push Docker images
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Build Docker images
         run: |
-          docker-compose build
-          echo "Build successful"
+          docker build -t todo-backend ./backend
+          docker build -t todo-frontend ./frontend
+          echo "Docker images built successfully"
