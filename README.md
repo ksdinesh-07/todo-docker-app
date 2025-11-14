@@ -26,3 +26,5 @@ A modern, full-stack Todo List web application built with **Python Flask** backe
 - 🚀 **CI/CD pipeline with GitHub Actions**
 
 ## 🏗️ Architecture
+ 
+<- **GitHub Actions** for CI/CD Test -->
